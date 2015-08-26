@@ -18,11 +18,6 @@ $(document).ready(function($) {
         });
     });
 
-    $('.conceptology-retail-carousel').owlCarousel({
-        items: 1,
-        navContainer: "#portfolio-retail-nav",
-        dotsContainer: "#portfolio-retail-dots"
-    });
     if ($(window).width() <= 768) {
             $('body').addClass('height-follower-mobile');
             $('.social-links-container').insertAfter('.mail-input-container');
