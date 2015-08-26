@@ -1,0 +1,155 @@
+@font-face{
+	font-family: FrutigerNextPro;
+	src: url(../fonts/FrutigerNextPro.otf) format('opentype');
+}
+@font-face{
+	font-family: FrutigerNextPro-Light;
+	src: url(../fonts/FrutigerNextPro.otf) format('opentype');
+}
+
+/*default styles*/
+body{
+	font-family: FrutigerNextPro-Light;
+}
+.container{
+	max-width: 1024px;
+	width:100%;
+}
+.auto-center{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+}
+footer{
+	position:absolute;
+	bottom:0px;
+	padding:20px 0px 30px;
+	width:100%;
+}
+input:focus{
+	outline:none;
+	box-shadow: none;
+}
+span{color:#404040;}
+p{font-size:18px; color:#404040;}
+a{color:#22e476;}
+a:hover{color:#22e476;}
+/*styles*/
+
+#splash-page{
+	background: url(../images/splash-page-bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#splash-page > .container{top:47%;}
+#splash-page .container > .col-md-7{
+	border-left:1px solid #dddddd;
+	padding:10px 25px;
+}
+.zgenius-text-logo{max-width:90%;margin-left:10%;}
+.social-links-container{margin-top:32px;}
+.social-links-container a > img{max-width: 35px; margin:0px 5px;}
+#splash-page .container > .col-md-7 h2{margin-top:0px;}
+#splash-page .container > .col-md-5{padding:0px 25px;}
+.zgenius-logo{
+	max-width:200px;
+	margin:0px auto 30px;
+}
+.mail-input-container{margin-top:40px;}
+.mail-input-container input.email-input{
+	padding:10px;
+	border:1px solid #dddddd;
+	border-radius: 	3px;
+	border-right: 0px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+	width:45%;
+}
+.join-now-btn{
+	padding:10px 20px;
+	border:1px solid #32cf91;
+	border-radius: 	3px;
+	background:#23ec89;
+	color:white;
+	border-left:0px;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+	font-weight: bold;
+}
+.footer-links a{
+	color:#5a5a5a;
+	margin:0px 10px;
+}
+/*end of styles*/
+@media (min-width:768px) and (max-width:995px){
+	.zgenius-text-logo{
+		max-width:192px !important;
+	}
+}
+@media (max-width:767px){
+	.auto-center{
+		top:0px;
+		left:0px;
+		position:relative;
+		transform:translate(0%);
+		-webkit-transform:translate(0%);
+		-moz-transform:translate(0%);
+	}
+	.height-follower{height:auto !important;}
+}
+@media (max-width:990px){
+	/*stlyes in mobile*/
+	p{font-size:12px;}
+	#splash-page{
+		background:none;
+	}
+	#splash-page > .container{padding-top:40px;}
+	.zgenius-logo{
+		max-width: 	110px;
+		margin-bottom:10px;
+	}
+	.zgenius-text-logo{
+		max-width:192px;
+		margin:0px auto;
+	}
+	#splash-page .container > .col-md-7{
+		padding: 5px;
+		border-left:0px;
+		text-align: center;
+	}
+	#splash-page .container > .col-md-7 h2{
+		font-size: 16px;
+        text-align: center;
+        margin-top:20px;
+	}
+	.mail-input-container{margin-top:20px;}
+	.mail-input-container input.email-input, 
+	.join-now-btn{
+		width: 70%;
+		text-align: center;
+        margin: 0px auto 10px;
+        float: none !important;
+        border-right:1px solid #dddddd;
+        border-left:1px solid #32cf91;
+        padding:5px;
+	}
+	footer{
+		padding-bottom:10px;
+		text-align: center;
+	}
+	.footer-links{display:none;}
+	.social-links-container{margin-top:40px;text-align:center;}
+	body.height-follower-mobile{
+		background: url(../images/splash-page-bg-mobile.png) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	.social-links-container a > img{max-width: 30px; margin:0px 5px;}
+}
